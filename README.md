@@ -86,7 +86,6 @@ println(aplicarDescuento(50)) // 40
 
 ## Parte 3. Aplicar: catálogo de problemas
 
-Se resolvieron los **siete tipos** propuestos, aunque el mínimo solicitado es cuatro. En todos los casos se usan diez productos con los mismos datos y se obtiene el mismo resultado en Scala, Java y Python.
 
 | Tipo | Situación real | Operación Scala | Resultado |
 |---|---|---|---|
@@ -100,7 +99,6 @@ Se resolvieron los **siete tipos** propuestos, aunque el mínimo solicitado es c
 
 **Código en los tres lenguajes:** [Scala](scala/Problemas.scala) · [Java](java/Problemas.java) · [Python](python/problemas.py).
 
-**Salida de cada versión:** [SALIDA_ESPERADA.txt](SALIDA_ESPERADA.txt). Se utiliza la misma etiqueta y el mismo orden para facilitar la comprobación. El resultado de validación se imprime como `true` en los tres programas.
 
 ## Parte 4. Ampliar: cuatro operaciones nuevas
 
@@ -188,26 +186,6 @@ val resultado = productos.groupBy(p => p.categoria)
 Las funciones anónimas son importantes porque permiten definir condiciones y transformaciones justo donde se necesitan, sin crear una función nombrada para cada operación pequeña. En listas de productos facilitan seleccionar artículos, calcular valores, comprobar condiciones y resumir inventarios. Además, el mismo razonamiento puede expresarse en Scala, Java y Python, aunque cambie la sintaxis.
 
 El caso de Apache Spark muestra que estas ideas no se limitan a ejercicios pequeños: `filter` y `map` también se usan para expresar transformaciones sobre datos distribuidos. Aprender lambdas ayuda a escribir programas más claros y a separar la lógica de cada transformación del mecanismo que recorre los datos.
-
-## Cómo ejecutar los programas
-
-Desde la raíz del repositorio:
-
-```bash
-# Scala 3 (Scala CLI)
-scala run scala/Problemas.scala
-scala run operaciones/OperacionesNuevas.scala
-
-# Java 17 o superior (modo archivo fuente)
-java java/Problemas.java
-
-# Python 3.10 o superior
-python python/problemas.py
-```
-
-Si tu sistema usa el comando `scala-cli`, puedes ejecutar `scala-cli run scala/Problemas.scala` y `scala-cli run operaciones/OperacionesNuevas.scala`.
-
-Los resultados de la Parte 3 están en [SALIDA_ESPERADA.txt](SALIDA_ESPERADA.txt). **Las capturas reales de ejecución deben añadirse a la carpeta `img/`** después de ejecutar los programas; no se han fabricado capturas.
 
 ## Fuentes y referencias
 

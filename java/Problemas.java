@@ -1,4 +1,4 @@
-// Java 17+ - ejecutar: java java/Problemas.java
+
 import java.util.*;
 import java.util.stream.*;
 public class Problemas {

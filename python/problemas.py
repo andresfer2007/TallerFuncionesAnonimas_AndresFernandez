@@ -1,4 +1,4 @@
-# Python 3.10+ - ejecutar: python python/problemas.py
+
 from functools import reduce
 productos = [
     dict(nombre="Laptop", categoria="Tecnologia", precio=900, stock=8),

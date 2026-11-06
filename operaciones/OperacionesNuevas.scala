@@ -1,5 +1,4 @@
-// Scala 3 - ejecutar: scala run operaciones/OperacionesNuevas.scala
-object OperacionesNuevas {
+
   case class Producto(nombre: String, categoria: String, precio: Int, stock: Int)
   val productos = List(
     Producto("Laptop", "Tecnologia", 900, 8),
@@ -13,7 +12,7 @@ object OperacionesNuevas {
     Producto("Agenda", "Papeleria", 12, 40),
     Producto("USB", "Tecnologia", 15, 75)
   )
-  def main(args: Array[String]): Unit = {
+
     // sortBy: recibe Producto => Int, devuelve la clave de ordenamiento
     println("sortBy: " + productos.sortBy(p => p.precio).take(3).map(p => p.nombre).mkString(", "))
     // groupBy: recibe Producto => String, devuelve la clave del grupo
@@ -29,5 +28,4 @@ object OperacionesNuevas {
       .sortBy(par => -par._2.map(p => p.stock).sum)
       .map(par => s"${par._1}:${par._2.map(p => p.stock).sum}")
     println("Combinacion: " + resultado.mkString(", "))
-  }
-}
+
