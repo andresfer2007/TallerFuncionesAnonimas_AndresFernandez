@@ -4,7 +4,6 @@
 **Entrega:** Semana 5  
 **Lenguajes:** Scala, Java y Python
 
-Este repositorio resuelve las cinco partes del trabajo de consulta. Los ejemplos utilizan los mismos diez productos, con nombre, categoría, precio y stock. Los archivos son independientes y están comentados.
 
 ## Parte 1. Explorar: programación funcional en el mundo real
 
